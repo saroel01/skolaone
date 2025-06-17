@@ -1,0 +1,16 @@
+phases:
+  - name: Initial Automation
+    description: >-
+      Implement basic data capture and reporting to replace manual processes.
+  - name: Insight Phase
+    description: >-
+      Introduce analytics and dashboards that provide actionable insights for
+      educators and administrators.
+  - name: Intelligent Assistance
+    description: >-
+      Gradually add features such as scheduling recommendations, financial
+      predictions, and automated alerts.
+roadmap_focus:
+  - Build robust, well-tested modules first.
+  - Layer AI-driven features as data quality improves.
+  - Gather community feedback to shape priorities.
