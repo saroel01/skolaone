@@ -5,4 +5,6 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('modules/', views.modules, name='modules'),
+    path('roadmap/', views.roadmap, name='roadmap'),
+    path('contact/', views.contact, name='contact'),
 ]
