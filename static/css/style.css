@@ -2,3 +2,18 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     background-color: #f8f9fa;
 }
+
+.hero {
+    background: linear-gradient(135deg, #4e73df, #1cc88a);
+    color: #fff;
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+form label {
+    font-weight: 500;
+}

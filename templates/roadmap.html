@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Roadmap - SkolaOne{% endblock %}
+{% block content %}
+<h1 class="text-center mb-4">Project Roadmap</h1>
+<div class="accordion" id="roadmapAccordion">
+    {% for phase in phases %}
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{ forloop.counter }}">
+            <button class="accordion-button {% if not forloop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ forloop.counter }}">
+                {{ phase.name }} - <span class="badge bg-secondary ms-2">{{ phase.status }}</span>
+            </button>
+        </h2>
+        <div id="collapse{{ forloop.counter }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" aria-labelledby="heading{{ forloop.counter }}" data-bs-parent="#roadmapAccordion">
+            <div class="accordion-body">
+                <p>{{ phase.description }}</p>
+                {% if phase.completed %}
+                <ul>
+                    {% for item in phase.completed %}
+                    <li>{{ item }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% empty %}
+    <p>No roadmap data available.</p>
+    {% endfor %}
+</div>
+{% endblock %}
