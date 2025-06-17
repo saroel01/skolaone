@@ -49,6 +49,9 @@ SkolaOne follows an **AI-first** roadmap that evolves through several phases:
 The roadmap focuses on building robust, well-tested modules first, then layering AI-driven features as data quality improves. Community feedback shapes priorities along the way.
 
 For a more detailed overview of upcoming milestones, see [docs/roadmap.yaml](docs/roadmap.yaml).
+You can also view the roadmap in your browser at `http://localhost:8000/roadmap/` after running the development server.
+You can reach the team using the contact form at `http://localhost:8000/contact/`.
+You can log in using Django's built-in authentication at `http://localhost:8000/login/`.
 
 ---
 
